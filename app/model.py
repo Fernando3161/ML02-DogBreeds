@@ -63,3 +63,6 @@ def create_model():
                         validation_data = (X_val, Y_val))
 
     model.save("dog_breed.h5")
+
+if __name__ == '__main__':
+    create_model()

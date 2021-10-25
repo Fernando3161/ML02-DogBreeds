@@ -6,6 +6,7 @@ from keras.models import load_model
 
 
 #Loading the Model
+
 model = load_model('dog_breed.h5')
 
 #Name of Classes
@@ -20,7 +21,6 @@ dog_image = st.file_uploader("Choose an image...", type="png")
 submit = st.button('Predict')
 #On predict button click
 if submit:
-
 
     if dog_image is not None:
 
